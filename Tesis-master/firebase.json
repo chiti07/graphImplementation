@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "bus-can",
+      "public": "dist/bus-can",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

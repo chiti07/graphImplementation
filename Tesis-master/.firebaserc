@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "bus-can-analyzer": {
+      "hosting": {
+        "bus-can": [
+          "bus-can-analyzer"
+        ]
+      }
+    }
+  }
+}

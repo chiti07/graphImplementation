@@ -1,0 +1,47 @@
+<mat-toolbar color="accent">
+    <div>
+        <button mat-icon-button (click)="onToggleSidenav()">
+        <mat-icon>menu</mat-icon>           
+    
+    </button>
+    </div>
+    <div>
+        <a routerLink='/'>LOGO</a>
+    </div>
+
+    <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
+        <ul fxLayout fxLayoutGap="20px" class="navigation-items">
+            <li *ngIf="!isAuth">
+                <a mat-list-item routerLink="/">
+                    <mat-icon>face</mat-icon>
+                    <span class="nav-caption">Login</span>
+                </a>
+            </li>
+            <li *ngIf="!isAuth">
+                <a mat-list-item routerLink="/signup">
+                    <mat-icon>how_to_reg</mat-icon>
+                    <span class="nav-caption">Sign Up</span>
+                </a>
+            </li>
+            <li *ngIf="isAuth">
+                <a mat-list-item>
+                    <mat-icon>notifications</mat-icon>
+                    <span class="nav-caption"></span>
+                </a>
+            </li>
+            <li *ngIf="isAuth">
+                <a mat-list-item routerLink="/dashboard">
+                    <mat-icon>view_compact</mat-icon>
+                    <span class="nav-caption">Dashboard</span>
+                </a>
+            </li>
+            <li *ngIf="isAuth">
+                <a mat-list-item routerLink="/">
+                    <mat-icon>eject</mat-icon>
+                    <span class="nav-caption">Logout</span>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</mat-toolbar>
