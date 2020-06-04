@@ -1,9 +1,28 @@
-<mat-nav-list>
-    <div class="profile-card">
-
-        <a mat-list-item routerLink="/" (click)="onClose()">
-            <mat-icon>eject</mat-icon>
-            <span class="nav-caption"> Logout</span>
-        </a>
-    </div>
+<mat-nav-list layout fullscreen>
+    <a mat-list-item routerLink="/training" (click)="onClose()">
+        <mat-icon>speed</mat-icon>
+        <span class="nav-caption">Car Speed</span>
+    </a>
+    <a mat-list-item routerLink="/training" (click)="onClose()">
+        <mat-icon>drive_eta</mat-icon>
+        <span class="nav-caption">Car Doors</span>
+    </a>
+    <a mat-list-item routerLink="/training" (click)="onClose()">
+        <mat-icon>code</mat-icon>
+        <span class="nav-caption">Car Directions</span>
+    </a>
+    <a mat-list-item routerLink="/training" (click)="onClose()">
+        <mat-icon>extension</mat-icon>
+        <span class="nav-caption">RPM</span>
+    </a>
+    <a mat-list-item routerLink="/training" (click)="onClose()">
+        <mat-icon>ev_station</mat-icon>
+        <span class="nav-caption">Fuel Status</span>
+    </a>
+    <mat-list-item>
+        <button mat-icon-button (click)="onLogout()">
+        <mat-icon>eject</mat-icon>
+        <span class="nav-caption">Logout</span>
+      </button>
+    </mat-list-item>
 </mat-nav-list>

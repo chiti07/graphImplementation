@@ -12,10 +12,15 @@ import { MatCardModule } from '@angular/material/card'
 import { HighchartsChartModule } from 'highcharts-angular';
 import { from } from 'rxjs';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatBadgeModule} from '@angular/material/badge';
+
+
 
 @NgModule({
-    imports: [MatButtonModule, MatIconModule, MatFormFieldModule, MatInputModule, MatCheckboxModule, MatSidenavModule, MatToolbarModule, MatListModule, MatDividerModule, HighchartsChartModule, FlexLayoutModule, MatCardModule],
-    exports: [MatButtonModule, MatIconModule, MatInputModule, MatFormFieldModule, MatCheckboxModule, MatSidenavModule, MatToolbarModule, MatListModule, MatDividerModule, HighchartsChartModule, FlexLayoutModule, MatCardModule]
+    imports: [MatButtonModule, MatIconModule, MatFormFieldModule, MatInputModule, MatCheckboxModule, MatSidenavModule, MatToolbarModule, MatListModule, MatDividerModule, HighchartsChartModule, FlexLayoutModule, MatCardModule, MatSnackBarModule, MatProgressSpinnerModule, MatBadgeModule],
+    exports: [MatButtonModule, MatIconModule, MatInputModule, MatFormFieldModule, MatCheckboxModule, MatSidenavModule, MatToolbarModule, MatListModule, MatDividerModule, HighchartsChartModule, FlexLayoutModule, MatCardModule, MatSnackBarModule, MatProgressSpinnerModule, MatBadgeModule]
 })
 export class MaterialModule{
 

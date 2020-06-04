@@ -5,7 +5,9 @@ app.use(cors());
 
 
 app.get('/', function(req, res) {
-    res.send({ data: Math.floor(Math.random() * (1000 - 1) + 1), code: 200, error: false });
+    res.send({ data: Math.floor(Math.random() * (70 - 1) + 1), code: 200, error: false });
+    //res.send({ data: Math.floor(85), code: 200, error: false });
+
 });
 
 app.listen(3000, function() {

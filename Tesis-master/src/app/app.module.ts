@@ -22,6 +22,8 @@ import { AreaComponent } from './widgets/area/area.component';
 import { CardComponent } from './widgets/card/card.component';
 
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { UIService } from './shared/ui.service';
+import { NotificationComponent } from './navigation/notification/notification.component';
 
 
 @NgModule({
@@ -33,7 +35,8 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     HeaderComponent,
     SidenavListComponent,
     AreaComponent,
-    CardComponent
+    CardComponent,
+    NotificationComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +52,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     HttpClientModule
    
   ],
-  providers: [AuthService],
+  providers: [AuthService, UIService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

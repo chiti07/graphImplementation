@@ -9,6 +9,8 @@ import { Subscription } from 'rxjs';
 })
 export class HeaderComponent implements OnInit, OnDestroy {
   @Output() sidenavToggle = new EventEmitter<void>();
+  @Output() notificationToggle = new EventEmitter<void>();
+
   isAuth = false;
   authSubscription: Subscription;
 
@@ -20,8 +22,15 @@ export class HeaderComponent implements OnInit, OnDestroy {
     });
   }
 
-  onToggleSidenav(){
+  onToggleSidenav() {
     this.sidenavToggle.emit();
+  }
+
+  onToggleNotification() {
+    this.notificationToggle.emit();
+  }
+  onLogout(){
+    this.authService.logout();
   }
 
   ngOnDestroy(){
